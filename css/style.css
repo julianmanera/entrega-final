@@ -25,6 +25,13 @@
   flex-direction: column;
   padding-left: 100px;
 }
+@media screen and (max-width: 480px) {
+  .section-2 .container .texto-derecha, .section-4 .container .texto-derecha {
+    display: flex;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+}
 .section-2 .container .texto-derecha h2, .section-4 .container .texto-derecha h2 {
   font-size: 3rem;
   font-weight: 650;
@@ -37,6 +44,11 @@
     font-weight: 700;
   }
 }
+@media screen and (max-width: 480px) {
+  .section-2 .container .texto-derecha h2, .section-4 .container .texto-derecha h2 {
+    font-size: 25px;
+  }
+}
 .section-2 .container .texto-derecha p, .section-4 .container .texto-derecha p {
   font-size: 25px;
   padding-bottom: 30px;
@@ -45,6 +57,12 @@
   .section-2 .container .texto-derecha p, .section-4 .container .texto-derecha p {
     font-size: 18px;
     font-weight: 500;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-2 .container .texto-derecha p, .section-4 .container .texto-derecha p {
+    font-size: 18px;
+    padding-top: 10px;
   }
 }
 .section-2 .container .img-izquierda, .section-4 .container .img-izquierda {
@@ -56,6 +74,11 @@
 @media only screen and (max-width: 767px) {
   .section-2 .container .img-izquierda, .section-4 .container .img-izquierda {
     width: 500px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-2 .container .img-izquierda, .section-4 .container .img-izquierda {
+    width: 360px;
   }
 }
 
@@ -102,6 +125,11 @@
     font-size: 38px;
   }
 }
+@media screen and (max-width: 480px) {
+  .section-3 .container .texto-izquierda h2 {
+    font-size: 25px;
+  }
+}
 .section-3 .container .texto-izquierda p {
   font-size: 25px;
   padding-bottom: 30px;
@@ -109,7 +137,13 @@
 @media screen and (max-width: 480px) {
   .section-3 .container .texto-izquierda p {
     font-size: 18px;
-    padding-top: 100px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-3 .container .texto-izquierda p {
+    font-size: 18px;
+    padding-top: 10px;
   }
 }
 .section-3 .container div .img-derecha {
@@ -120,6 +154,11 @@
 @media only screen and (max-width: 767px) {
   .section-3 .container div .img-derecha {
     width: 500px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-3 .container div .img-derecha {
+    width: 360px;
   }
 }
 
@@ -387,6 +426,12 @@ div .button1-container .button2 {
   color: honeydew;
   font-size: 17px;
   height: 30px;
+}
+@media screen and (max-width: 433px) {
+  .contacto-section .formulario .contacto-h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
 .contacto-section .formulario .contacto-container {
   width: 100%;
