@@ -4,7 +4,6 @@
 
     .container {
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
 
         @media only screen and (max-width: 990px) {
@@ -12,16 +11,19 @@
             flex-wrap: wrap;
             flex-direction: column-reverse;
         }
+
+        @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            padding-left: 10px;
+        }
         
 
         .texto-derecha {
             display: flex;
             flex-direction: column;
             padding-left: 100px;
-
-            @media only screen and (max-width: 990px) {
-                width: auto;
-            }
             
             
             h2 {
@@ -30,8 +32,9 @@
                 padding-bottom: 25px;
                 padding-top: 30px;
 
-                @media only screen and (min-width: 991px) and (max-width: 1399px) {
-                    font-size: 38px;
+                @media screen and (max-width: 480px) {
+                    font-size: 30px;
+                    font-weight: 700;
                 }
             }
 
@@ -39,8 +42,9 @@
                 font-size: 25px;
                 padding-bottom: 30px;
 
-                @media only screen and (min-width: 991px) and (max-width: 1399px) {
-                    font-size: 20px;
+                @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                    font-weight: 500;
                 }
             }
 
@@ -53,6 +57,10 @@
             text-align: center;
             padding-right: 10px;
 
+            @media only screen and (max-width: 767px) {
+                width: 500px;
+            }
+
         }
     }
 }
@@ -60,9 +68,10 @@
 .section-3 {
     background-color: rgb(211, 211, 211);
 
+    
+
     .container {
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
 
         @media only screen and (max-width: 990px) {
@@ -70,13 +79,24 @@
             flex-wrap: wrap;
             
         }
+
+        @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 10px;
+        }
         
 
         .texto-izquierda {
             display: flex;
             flex-direction: column;
             padding-left: 100px;
-            
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                padding-left: 10px;
+                flex-wrap: wrap;
+            }
             
             h2 {
                 font-size: 3rem;
@@ -93,26 +113,28 @@
                 font-size: 25px;
                 padding-bottom: 30px;
 
-                @media only screen and (min-width: 991px) and (max-width: 1399px) {
-                    font-size: 20px;
+                @media screen and (max-width: 480px) {
+                    font-size: 18px;
+                    padding-top: 100px;
                 }
             }
 
 
         }
-
-        .img-derecha {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding-right: 10px;
-            width: auto;
-
-            @media only screen and (max-width: 990px) {
+        
+        
+        div {
+            .img-derecha {
                 display: flex;
-                align-items: flex-start;
+                align-items: center;
+                text-align: center;
+                
+                @media only screen and (max-width: 767px) {
+                    width: 500px;
+                }
+            
             }
-
         }
+        
     }
 }
