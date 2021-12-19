@@ -1,0 +1,108 @@
+
+.section-2, .section-4 {
+    background-color: rgb(241, 241, 241);
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        @media only screen and (max-width: 990px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        
+
+        .texto-derecha {
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            
+            
+            h2 {
+                font-size: 3rem;
+                font-weight: 650;
+                padding-bottom: 25px;
+                padding-top: 30px;
+
+                @media only screen and (min-width: 991px) and (max-width: 1399px) {
+                    font-size: 38px;
+                }
+            }
+
+            p {
+                font-size: 25px;
+                padding-bottom: 30px;
+
+                @media only screen and (min-width: 991px) and (max-width: 1399px) {
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+
+        .img-izquierda {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-right: 10px;
+
+        }
+    }
+}
+
+.section-3 {
+    background-color: rgb(211, 211, 211);
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        @media only screen and (max-width: 990px) {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+        
+
+        .texto-izquierda {
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            
+            
+            h2 {
+                font-size: 3rem;
+                font-weight: 650;
+                padding-bottom: 25px;
+                padding-top: 30px;
+
+                @media only screen and (min-width: 991px) and (max-width: 1399px) {
+                    font-size: 38px;
+                }
+            }
+
+            p {
+                font-size: 25px;
+                padding-bottom: 30px;
+
+                @media only screen and (min-width: 991px) and (max-width: 1399px) {
+                    font-size: 20px;
+                }
+            }
+
+
+        }
+
+        .img-derecha {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-right: 10px;
+
+        }
+    }
+}

@@ -1,0 +1,449 @@
+.section-2, .section-4 {
+  background-color: #f1f1f1;
+}
+.section-2 .container, .section-4 .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+@media only screen and (max-width: 990px) {
+  .section-2 .container, .section-4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+.section-2 .container .texto-derecha, .section-4 .container .texto-derecha {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.section-2 .container .texto-derecha h2, .section-4 .container .texto-derecha h2 {
+  font-size: 3rem;
+  font-weight: 650;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1399px) {
+  .section-2 .container .texto-derecha h2, .section-4 .container .texto-derecha h2 {
+    font-size: 38px;
+  }
+}
+.section-2 .container .texto-derecha p, .section-4 .container .texto-derecha p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1399px) {
+  .section-2 .container .texto-derecha p, .section-4 .container .texto-derecha p {
+    font-size: 20px;
+  }
+}
+.section-2 .container .img-izquierda, .section-4 .container .img-izquierda {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 10px;
+}
+
+.section-3 {
+  background-color: lightgray;
+}
+.section-3 .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+@media only screen and (max-width: 990px) {
+  .section-3 .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+.section-3 .container .texto-izquierda {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+.section-3 .container .texto-izquierda h2 {
+  font-size: 3rem;
+  font-weight: 650;
+  padding-bottom: 25px;
+  padding-top: 30px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1399px) {
+  .section-3 .container .texto-izquierda h2 {
+    font-size: 38px;
+  }
+}
+.section-3 .container .texto-izquierda p {
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 991px) and (max-width: 1399px) {
+  .section-3 .container .texto-izquierda p {
+    font-size: 20px;
+  }
+}
+.section-3 .container .img-derecha {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-right: 10px;
+}
+
+div .seccion-1 {
+  background: url(../src/background-one.gif);
+  background-position-y: 75%;
+  background-size: cover;
+  width: 100%;
+  height: 445px;
+}
+@media screen and (max-width: 480px) {
+  div .seccion-1 {
+    background-color: #2d2db4;
+    width: 100%;
+    height: 530px;
+  }
+}
+div .seccion-1 div h1 {
+  font-family: "Anton", sans-serif;
+  height: 80px;
+  font-size: 4em;
+  color: honeydew;
+  text-align: center;
+  letter-spacing: 2px;
+}
+div .seccion-1 .lorem-container .lorem1 {
+  display: flex;
+  width: 100%;
+  font-size: 1.5em;
+  color: #faefda;
+  text-align: center;
+  letter-spacing: 1px;
+}
+div .button1-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+div .button1-container button {
+  top: 40px;
+  width: 240px;
+  height: 61px;
+  border-radius: 30px;
+}
+div .button1-container .button1 {
+  background-color: honeydew;
+  font-size: 20px;
+}
+div .button1-container .button2 {
+  background-color: black;
+  color: honeydew;
+  font-size: 20px;
+}
+
+.register-section {
+  background: url(../src/background-register.jpg);
+  height: 650px;
+  background-position-y: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register-section .container-form {
+  padding-top: 90px;
+}
+.register-section .container-form .formulario {
+  background-color: #50555a;
+  margin-top: 150px;
+  padding: 3%;
+}
+@media (min-width: 768px) {
+  .register-section .container-form .formulario {
+    margin: auto;
+    width: 768px;
+    border-radius: 10px;
+  }
+}
+.register-section .container-form .formulario .register-container {
+  width: 656px;
+  padding: 15px;
+}
+.register-section .container-form .formulario .registrarse {
+  text-align: center;
+  color: honeydew;
+  font-size: 40px;
+  height: 50px;
+}
+.register-section .container-form .formulario .register-container .input-container {
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+.register-section .container-form .formulario .register-container .input-container .input-registro {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  background-color: #50555a;
+}
+.register-section .container-form .formulario .register-container .input-container .input-registro .icon {
+  min-width: 50px;
+  text-align: center;
+  color: #0d002b;
+}
+.register-section .container-form .formulario .register-container div .input-container {
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+.register-section .container-form .formulario .register-container div .icon {
+  min-width: 50px;
+  text-align: center;
+  color: #0d002b;
+}
+.register-section .container-form .formulario .register-container div .input-registro {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  background-color: #50555a;
+}
+.register-section .container-form .formulario .register-container div .register-button {
+  border: none;
+  width: 656px;
+  color: white;
+  font-size: 20px;
+  background-color: #0d002b;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.register-section .container-form .formulario .register-container div .register-button:hover {
+  background: cadetblue;
+}
+.register-section .container-form .formulario .register-container div .p-register {
+  text-align: center;
+  color: honeydew;
+}
+.register-section .container-form .formulario .register-container div .link {
+  text-decoration: none;
+  color: #0d002b;
+  font-weight: 600;
+}
+.register-section .container-form .formulario .register-container div .link:hover {
+  color: cadetblue;
+}
+
+.signup-section {
+  background-image: url(../src/background-signup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+}
+.signup-section .formulario {
+  background-color: #50555a;
+  margin-top: 150px;
+  padding: 3%;
+}
+@media (min-width: 768px) {
+  .signup-section .formulario {
+    margin: auto;
+    width: 875px;
+    border-radius: 10px;
+  }
+}
+.signup-section .formulario .signin {
+  text-align: center;
+  color: honeydew;
+  font-size: 40px;
+  height: 50px;
+}
+.signup-section .formulario .signin-container {
+  width: 768px;
+  padding: 15px;
+}
+.signup-section .formulario .signin-container .input-container {
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+.signup-section .formulario .signin-container .icon {
+  min-width: 50px;
+  text-align: center;
+  color: #0d002b;
+}
+.signup-section .formulario .signin-container .input-signin {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  background-color: #50555a;
+}
+.signup-section .formulario div .input-container {
+  margin-bottom: 15px;
+  border: 1px solid #aaa;
+}
+.signup-section .formulario div .icon {
+  min-width: 50px;
+  text-align: center;
+  color: #0d002b;
+}
+.signup-section .formulario div .input-signin {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none;
+  background-color: #50555a;
+}
+.signup-section .formulario .p-signin {
+  text-align: center;
+  color: honeydew;
+}
+.signup-section .formulario div .signin-button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background-color: #0d002b;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.signup-section .formulario div .signin-button:hover {
+  background: cadetblue;
+}
+.signup-section .formulario div .link {
+  text-decoration: none;
+  color: #0d002b;
+  font-weight: 600;
+}
+.signup-section .formulario div .link:hover {
+  color: cadetblue;
+}
+
+.contacto-section {
+  background: url(../src/background-contacto.jpg);
+  height: 890px;
+  background-position-y: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.contacto-section .formulario {
+  background-color: #50555a;
+  padding: 3%;
+}
+@media (min-width: 768px) {
+  .contacto-section .formulario {
+    margin: auto;
+    width: 768px;
+    border-radius: 10px;
+  }
+}
+.contacto-section .formulario .contacto-h1 {
+  text-align: left;
+  color: honeydew;
+  font-size: 40px;
+  height: 50px;
+}
+.contacto-section .formulario .contacto-h2 {
+  text-align: left;
+  color: honeydew;
+  font-size: 17px;
+  height: 30px;
+}
+.contacto-section .formulario .contacto-container {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.contacto-section .formulario .contacto-container .input-contacto {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  background-color: honeydew;
+  border-radius: 5px;
+}
+.contacto-section .formulario .mensaje-container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: start;
+}
+.contacto-section .formulario .mensaje-container .input-mensaje-contacto {
+  height: 250px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+}
+.contacto-section .formulario div .contacto-button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background-color: #0d002b;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contacto-section .formulario div .contacto-button:hover {
+  color: cadetblue;
+}
+.contacto-section .formulario .mensaje-container {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: start;
+}
+
+.text-container {
+  height: 100px;
+}
+
+.nosotros-section .div1-nosotros {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.nosotros-section .div1-nosotros .h1-nosotros {
+  font-family: "Anton", sans-serif;
+  font-size: 75px;
+}
+.nosotros-section .div1-nosotros .h2-nosotros {
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+}
+.nosotros-section .div1-nosotros .p1-nosotros {
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+}
+.nosotros-section .div2-nosotros {
+  display: flex;
+  align-items: center;
+  padding-top: 200px;
+  width: 70%;
+}
+@media (max-width: 1100px) {
+  .nosotros-section .div2-nosotros {
+    flex-wrap: wrap;
+  }
+}
+.nosotros-section .div2-nosotros .h3-nosotros {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Anton", sans-serif;
+}
+.nosotros-section .div2-nosotros .p2-nosotros {
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
