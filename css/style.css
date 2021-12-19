@@ -18,6 +18,11 @@
   flex-direction: column;
   padding-left: 100px;
 }
+@media only screen and (max-width: 990px) {
+  .section-2 .container .texto-derecha, .section-4 .container .texto-derecha {
+    width: auto;
+  }
+}
 .section-2 .container .texto-derecha h2, .section-4 .container .texto-derecha h2 {
   font-size: 3rem;
   font-weight: 650;
@@ -57,7 +62,6 @@
   .section-3 .container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
   }
 }
 .section-3 .container .texto-izquierda {
@@ -90,6 +94,13 @@
   align-items: center;
   text-align: center;
   padding-right: 10px;
+  width: auto;
+}
+@media only screen and (max-width: 990px) {
+  .section-3 .container .img-derecha {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 div .seccion-1 {
@@ -398,6 +409,9 @@ div .button1-container .button2 {
   height: 100px;
 }
 
+.nosotros-section {
+  background-color: lightgray;
+}
 .nosotros-section .div1-nosotros {
   display: flex;
   align-items: center;
@@ -417,23 +431,41 @@ div .button1-container .button2 {
   text-align: center;
   font-size: 25px;
 }
-.nosotros-section .div2-nosotros {
+.nosotros-section .container-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nosotros-section .container-nosotros .div2-nosotros {
   display: flex;
   align-items: center;
   padding-top: 200px;
   width: 70%;
 }
 @media (max-width: 1100px) {
-  .nosotros-section .div2-nosotros {
+  .nosotros-section .container-nosotros .div2-nosotros {
     flex-wrap: wrap;
   }
 }
-.nosotros-section .div2-nosotros .h3-nosotros {
+.nosotros-section .container-nosotros .div2-nosotros .h3-nosotros {
   font-size: 35px;
   font-weight: 600;
   font-family: "Anton", sans-serif;
 }
-.nosotros-section .div2-nosotros .p2-nosotros {
+.nosotros-section .container-nosotros .div2-nosotros .p2-nosotros {
+  font-size: 20px;
+}
+.nosotros-section .container-nosotros .div3-nosotros {
+  display: flex;
+  padding-top: 200px;
+  width: 70%;
+}
+.nosotros-section .container-nosotros .div3-nosotros .h3-nosotros {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Anton", sans-serif;
+}
+.nosotros-section .container-nosotros .div3-nosotros .p2-nosotros {
   font-size: 20px;
 }
 
